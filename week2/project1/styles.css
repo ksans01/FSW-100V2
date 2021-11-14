@@ -1,0 +1,29 @@
+div.headlines #header {
+    color: darkgreen;
+}
+
+div.headlines {
+    font-family: Georgia;
+    text-align: center;
+}
+
+#paragraphs {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div.link .line {
+    text-transform: uppercase;
+}
+
+img {
+    float: left;
+    margin: 25px;
+}
