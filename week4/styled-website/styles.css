@@ -29,5 +29,11 @@ th {
 }
 
 td {
-    padding: 25
+    padding: 25;
+    background-color: white;
+}
+
+.aboutUs {
+    font-family: 'Comforter Brush';
+    font-size: 30
 }
