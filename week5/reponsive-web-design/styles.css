@@ -1,0 +1,72 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav nav nav nav"
+                         "main1 main2 main3 main4"
+                         "sidebar1 sidebar1 sidebar2 sidebar2"
+                         "content1 content1 content1 content2";
+    grid-gap: .5rem;
+}
+
+nav {
+    background: #F5C6D6;
+    grid-area: nav;
+}
+
+#main1 {
+    background: #EE2E84;
+    grid-area: main1;
+}
+
+#main2 {
+    background: #EE2E84;
+    grid-area: main2;
+}
+
+#main3 {
+    background: #EE2E84;
+    grid-area: main3;
+}
+
+#main4 {
+    background: #EE2E84;
+    grid-area: main4;
+}
+
+#sidebar1 {
+    background: #85CFD8;
+    grid-area: sidebar1;
+}
+
+#sidebar2 {
+    background: #85CFD8;
+    grid-area: sidebar2;
+}
+
+#content1 {
+    background: #8DC63F;
+    grid-area: content1;
+}
+
+#content2 {
+    background: #E76E34;
+    grid-area: content2;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;    
+        grid-template-areas: "nav"
+                             "main1"
+                             "main2"
+                             "main3"
+                             "main4"
+                             "sidebar1"
+                             "sidebar2"
+                             "content1"
+                             "content2"
+        }
+}
